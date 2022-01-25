@@ -15,3 +15,13 @@ The human mind is hardwired to look for patterns everywhere and we must be vigil
 
 Forecast of (level + trend) is a baseline forecast. Example is Holt's method where there are level smoothing constant (alpha) and trend constant (beta). Seasonal smoothing (Holt Winter's method) considers a seasonal baseline which is a regularly recurring pattern (day, week, month, quarter etc.) and baseline rises and falls at regular intervals. Deviation of each season from the baseline’s long-term (annual) average is used for forecasts (seasonal smoothing constant is delta). 
 On the other hand, Exponential Smoothing defines trend as the difference between observed values in consecutive records. 
+
+***ARIMA***
+
+ARIMA handles data with trend, SARIMA data with a seasonal component. The trend, seasonality and noise in a time series are explained by model parameter set (p,d,q), also called the order. The auto-regressive parameter is p; d is difference parameter and q is the moving average parameter. Trend is the long-term change in the mean level of observations. Seasonality is the pattern that’s periodically repeated, and noise is the random variation in the data. A time series is additive when the 'trend' is linear (changes are at linear rate) and 'seasonality' is constant in time. 
+
+Y(t) = Level + Trend + Seasonality + Noise
+
+A stationary time series does not exhibit a trend. 
+
+
